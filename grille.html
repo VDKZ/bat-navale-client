@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bataille navale</title>
+		<style>
+			body{
+				background-color: gray;
+			}
+			table{
+				color: white;
+				top:20px;
+				left:20px;
+				position:absolute;
+				border: 1px solid white;
+				border-collapse: collapse;
+			}
+			td{
+				padding: 12px;
+				text-align: center;
+        width:25px;
+			}
+      td:hover{
+				cursor:pointer;
+			}
+			th{
+				font-size: 25px
+			}
+			.bold{
+				font-weight: bold;
+				font-size: 20px
+			}
+      .touche{
+        background-color:green;
+      }
+      .rate{
+        background-color:red;
+      }
+		</style>
+	</head>
+	<body>
+		<table border="1px";>
+			<thead>
+				<tr>
+					<th colspan="11">
+						joueur
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="bold">
+          <td></td>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+					<td>G</td>
+					<td>H</td>
+					<td>I</td>
+          <td>J</td>
+				</tr>
+
+				<tr>
+					<td class="bold">1</td>
+					<td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+				<tr>
+						<td class="bold">9</td>
+						<td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+        <tr>
+						<td class="bold">10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+			</tbody>
+		</table>
+    <table border="1px"; style="margin-left:600px;">
+			<thead>
+				<tr>
+					<th colspan="11">
+						adversaire
+					</th>
+				</tr>
+			</thead>
+			<tbody id="adversaire">
+				<tr class="bold">
+          <td></td>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+					<td>G</td>
+					<td>H</td>
+					<td>I</td>
+          <td>J</td>
+				</tr>
+
+				<tr>
+					<td class="bold">1</td>
+					<td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+
+				<tr>
+						<td class="bold">8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+				<tr>
+						<td class="bold">9</td>
+						<td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+        <tr>
+						<td class="bold">10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+<script src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="bataille.js"></script>
